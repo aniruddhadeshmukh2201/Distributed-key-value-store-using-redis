@@ -10,13 +10,13 @@ import redis from "redis"
 
 const app = express();
 
-const { baseUrl, deployParamName } = constants;
+const { baseUrl, redisClientParamName } = constants;
 
 // create redis client
 const REDIS_PORT = process.env.PORT || 6379;
 const client = redis.createClient(REDIS_PORT);
 
-app.set(deployParamName, deploy);
+app.set(redisClientParamName, client);
 // Setup middleware
 app.use(helmet());
 app.use(cors());
