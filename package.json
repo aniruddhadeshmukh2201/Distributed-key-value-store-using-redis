@@ -18,7 +18,13 @@
   },
   "homepage": "https://github.com/aniruddhadeshmukh2201/Distributed-key-value-store-using-redis#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
-    "redis": "^4.1.1"
+    "express-winston": "^4.2.0",
+    "helmet": "^5.1.0",
+    "moment": "^2.29.3",
+    "redis": "^4.1.1",
+    "winston": "^3.8.1"
   }
 }
