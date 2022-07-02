@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Implementation of a Distrbuted Key-Value Store with the following features : Consistent Hashing, quorum Consensus, Gossip protocol, Vector Clocks for versioning, replication of data.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/aniruddhadeshmukh2201/Distributed-key-value-store-using-redis/issues"
   },
-  "homepage": "https://github.com/aniruddhadeshmukh2201/Distributed-key-value-store-using-redis#readme"
+  "homepage": "https://github.com/aniruddhadeshmukh2201/Distributed-key-value-store-using-redis#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "redis": "^4.1.1"
+  }
 }
