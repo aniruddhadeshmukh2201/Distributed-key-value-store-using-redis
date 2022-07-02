@@ -14,16 +14,5 @@ router.use(Node.prefix, nodes)
 router.use(Coordinator.prefix, coordinator)
 
 
-router.get(`/health`, (req, res) => {
-  const deployment = req.app.get(deployParamName);
-  res.json({
-    name: packageJson.name,
-    description: packageJson.description,
-    version: packageJson.version,
-    timestamp: moment().unix(),
-    deployment
-  });
-});
-
 
 export default router;
