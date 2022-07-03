@@ -1,5 +1,5 @@
 import express from 'express';
-import {Coordinator} from './routes.js.js';
+import {Coordinator} from '../endpoints.js';
 import CoordinatorController from './Coordinator.controller.js';
 const router=express.Router();
 
